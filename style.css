@@ -1,0 +1,227 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(139, 108, 108, 0.3), rgba(0, 0, 0, 0.5) 80%),  url('bg.png');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: aliceblue;
+    font-family: Montserrat;
+    text-decoration: none;
+    
+}
+/* menubar */
+.menubar { 
+    position: absolute;      
+    top: 15px;
+    right :0px;
+    margin-right: 26px;
+    
+}
+.menubar ul li{
+    display:inline-flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px; 
+    margin: 10px 60px 0px -30px;
+    
+}
+
+.menubar ul li:hover{
+    border-bottom: 2px solid white;
+}
+/* status */
+.status-wrap {
+    position: absolute;
+    /* position: relative; */
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.status {
+    overflow: hidden;
+}
+
+.status .p1 {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 150%;
+    color: white;
+}
+.status .p2 {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 300;
+    font-size: 35px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 150%;
+    position: relative;
+}
+
+.line-before::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    border: 1px solid white;
+    left: calc(-50px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.char{
+    color: #fff;
+    opacity: 1;
+
+}
+
+.btn{
+    position: absolute;
+    /* position: relative; */
+    padding: 15px 30px;
+    background-color: #a8ba9ab9;
+    /* radius sẽ bo góc button */
+    border-radius: 40px;
+    border: none;
+    /* làm mờ */
+    /* text-transform:lowercase; chỉnh form chữ bên trong */
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Montserrat;
+}
+.btn:hover{
+    background-color:#a1b89081;
+}
+
+/* .icon */
+.icon-btn {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.icon-email {
+    background-image: url('mail.png');
+}
+.icon-phone {
+    background-image: url('phone.png');
+}
+.icon-fb {
+    background-image: url('facebook.png');
+}
+
+.bottom-nav {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 60px;
+    z-index: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-around;
+    
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+    
+}
+
+.mr-30 {
+    margin-right: 50px;
+    
+}
+
+.w-100 {
+    width: 96%;
+    
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* aboutÚS */
+/* .aboutus{
+    /* linear-gradient(to bottom, rgba(139, 108, 108, 0.3), rgba(0, 0, 0, 0.5) 80%),  url('bg.png'); 
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.2)), url(aboutus.jpg);
+    width: 95vw;
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.aboutus {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.aboutus img{
+    width: 95%;
+    height: 100%;
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutus .content{
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 40%;
+    right: 50%;
+    transform: translateY(-50%);
+    padding: 60px;
+    margin: 30px;
+    
+}
+.line::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.911);
+    right: calc(200px);
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+/* hr{
+    width: 250px;
+    height: 5px;
+    background-color: #333;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+} */
